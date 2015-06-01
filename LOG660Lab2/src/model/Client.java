@@ -4,15 +4,15 @@ import java.util.Date;
 
 public class Client
 {
-	public String nomClient;
-	public String prenomClient;
-	public String courriel;
-	public String noTelephone;
-	public Adresse adresse;
-	public CarteCredit carteCredit;
-	public Date dateNaissance;
-	public String motDePasse;
-	public Forfait forfait;
+	private String nomClient;
+	private String prenomClient;
+	private String courriel;
+	private String noTelephone;
+	private Adresse adresse;
+	private CarteCredit carteCredit;
+	private Date dateNaissance;
+	private String motDePasse;
+	private Forfait forfait;
 	
 	public String getNomClient()
 	{

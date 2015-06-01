@@ -2,13 +2,13 @@ package model;
 
 public class Adresse
 {
-	public String noCivique;
-	public int noApartement;
-	public String nomRue;
-	public String nomVille;
-	public String nomProvince;
-	public String nomPays;
-	public String codePostal;
+	private String noCivique;
+	private int noApartement;
+	private String nomRue;
+	private String nomVille;
+	private String nomProvince;
+	private String nomPays;
+	private String codePostal;
 	
 	public String getNoCivique()
 	{
