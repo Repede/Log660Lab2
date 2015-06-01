@@ -2,6 +2,7 @@ package model;
 
 public class Adresse
 {
+	private int noAdresse;
 	private String noCivique;
 	private int noApartement;
 	private String nomRue;
@@ -9,6 +10,15 @@ public class Adresse
 	private String nomProvince;
 	private String nomPays;
 	private String codePostal;
+	
+	public int getNoAdresse()
+	{
+		return noAdresse;
+	}
+	public void setNoAdresse(int noAdresse)
+	{
+		this.noAdresse = noAdresse;
+	}
 	
 	public String getNoCivique()
 	{

@@ -4,7 +4,8 @@ public class Scenariste
 {
 	private int noScenariste;
 
-	public int getNoScenariste() {
+	public int getNoScenariste()
+	{
 		return noScenariste;
 	}
 }

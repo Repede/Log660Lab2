@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Client
 {
+	private int noClient;
 	private String nomClient;
 	private String prenomClient;
 	private String courriel;
@@ -13,6 +14,15 @@ public class Client
 	private Date dateNaissance;
 	private String motDePasse;
 	private Forfait forfait;
+	
+	public int getNoClient()
+	{
+		return noClient;
+	}
+	public void setNoClient(int noClient)
+	{
+		this.noClient = noClient;
+	}
 	
 	public String getNomClient()
 	{
@@ -94,6 +104,4 @@ public class Client
 	{
 		this.forfait = forfait;
 	}
-	
-	
 }

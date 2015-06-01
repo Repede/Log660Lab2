@@ -4,7 +4,8 @@ public class Realisateur
 {
 	private int noRealisateur;
 
-	public int getNoRealisateur() {
+	public int getNoRealisateur()
+	{
 		return noRealisateur;
 	}
 }

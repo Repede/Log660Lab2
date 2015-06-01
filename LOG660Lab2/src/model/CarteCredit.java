@@ -8,7 +8,7 @@ public class CarteCredit
 	private Date dateExpiration;
 	private String nomProprietaire;
 	private int cvv;
-	private enum typeCC{VISA,MASTERCARD,AMEX}
+	private Util.TypeCC type;
 	
 	public int getNoCC()
 	{
@@ -44,5 +44,14 @@ public class CarteCredit
 	public void setCvv(int cvv)
 	{
 		this.cvv = cvv;
-	};
+	}
+	
+	public Util.TypeCC getTypeCC()
+	{
+		return type;
+	}
+	public void setType(Util.TypeCC type)
+	{
+		this.type = type;
+	}
 }
