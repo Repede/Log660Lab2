@@ -1,6 +1,7 @@
 package model;
 
 import java.util.Date;
+import model.Util.TypeCC;
 
 public class CarteCredit
 {
@@ -8,7 +9,7 @@ public class CarteCredit
 	private Date dateExpiration;
 	private String nomProprietaire;
 	private int cvv;
-	private Util.TypeCC type;
+	private TypeCC type;
 	
 	public int getNoCC()
 	{
@@ -46,11 +47,11 @@ public class CarteCredit
 		this.cvv = cvv;
 	}
 	
-	public Util.TypeCC getTypeCC()
+	public TypeCC getTypeCC()
 	{
 		return type;
 	}
-	public void setType(Util.TypeCC type)
+	public void setType(TypeCC type)
 	{
 		this.type = type;
 	}

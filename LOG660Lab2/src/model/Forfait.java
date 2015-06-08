@@ -1,9 +1,10 @@
 package model;
+import model.Util.TypeForfait;
 
 public class Forfait
 {
 	private int noForfait;
-	private String typeForfait;
+	private TypeForfait typeForfait;
 	private float cout;
 	private int locationMax;
 	private int dureeMax;
@@ -12,11 +13,11 @@ public class Forfait
 		return noForfait;
 	}
 	
-	public String getTypeForfait() {
+	public TypeForfait getTypeForfait() {
 		return typeForfait;
 	}
 	
-	public void setTypeForfait(String typeForfait) {
+	public void setTypeForfait(TypeForfait typeForfait) {
 		this.typeForfait = typeForfait;
 	}
 	

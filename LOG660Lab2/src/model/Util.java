@@ -2,6 +2,6 @@ package model;
 
 public class Util
 {
-	public enum typeCC{VISA, MASTERCARD, AMEX};
-	public enum typeForfait{Débutant, Intermédiaire, Avancé};
+	public enum TypeCC{VISA, MASTERCARD, AMEX};
+	public enum TypeForfait{Débutant, Intermédiaire, Avancé};
 }
