@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="Client" table="CLIENT">
+  <id name="noClient" type="int">
+   <column name="NOCLIENT" />
+   <generator class="native"/>
+  </id>
+  <property name="nomClient" type="int">
+   <column name="NOMCLIENT" not-null="true" />
+  </property>
+  <property name="courriel" type="string">
+   <column name="COURRIEL" unique="true" not-null="true" />
+  </property>
+  <property name="noTelephone" type="string">
+   <column name="NOTELEPHONE" not-null="true" />
+  </property>
+  <one-to-one name="noAdresse" class="Adresse"></one-to-one>
+  <one-to-one name="carteCredit" class="CarteCredit"></one-to-one>
+  <property name="dateNaissance" type="date">
+   <column name="DATENAISSANCE" not-null="true" />
+  </property>
+  <property name="motDePasse" type="string">
+   <column name="MOTDEPASSE" not-null="true"/>
+  </property>
+  <one-to-one name="noForfait" class="Forfait"></one-to-one>
+ </class>
+</hibernate-mapping>

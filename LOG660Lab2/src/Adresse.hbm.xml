@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="Adresse" table="ADRESSE">
+  <id name="noAdresse" type="int">
+   <column name="NOADRESSE" />
+   <generator class="native"/>
+  </id>
+  <property name="noCivique" type="string">
+   <column name="NOCIVIQUE" not-null="true" />
+  </property>
+  <property name="noApartement" type="string">
+   <column name="NOAPARTEMENT" />
+  </property>
+  <property name="nomRue" type="string">
+   <column name="NOMRUE" not-null="true" />
+  </property>
+  <property name="nomVille" type="string">
+   <column name="NOMVILLE" not-null="true" />
+  </property>
+  <property name="nomProvince" type="string">
+   <column name="NOMPROVINCE" not-null="true" />
+  </property>
+  <property name="nomPays" type="string">
+   <column name="NOMPAYS" not-null="true" />
+  </property>
+  <property name="codePostal" type="string">
+   <column name="CODEPOSTAL" not-null="true" />
+  </property>
+ </class>
+</hibernate-mapping>

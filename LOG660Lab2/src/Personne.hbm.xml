@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="Personne" table="PERSONNE">
+  <id name="noPersonne" type="int">
+   <column name="NOPERSONNE" />
+   <generator class="native"/>
+  </id>
+  <property name="nom" type="string">
+   <column name="NOM" not-null="true" />
+  </property>
+  <property name="dateNaissance" type="date">
+   <column name="DATENAISSANCE" />
+  </property>
+  <property name="lieuNaissance" type="string">
+   <column name="LIEUNAISSANCE" />
+  </property>
+  <property name="biographie" type="string">
+   <column name="BIOGRAPHIE" />
+  </property>
+ </class>
+</hibernate-mapping>

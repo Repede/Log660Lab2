@@ -9,7 +9,7 @@ public class CarteCredit
 	private Date dateExpiration;
 	private String nomProprietaire;
 	private int cvv;
-	private TypeCC type;
+	private TypeCC typeCredit;
 	
 	public int getNoCC()
 	{
@@ -49,10 +49,10 @@ public class CarteCredit
 	
 	public TypeCC getTypeCC()
 	{
-		return type;
+		return typeCredit;
 	}
-	public void setType(TypeCC type)
+	public void setType(TypeCC typeCredit)
 	{
-		this.type = type;
+		this.typeCredit = typeCredit;
 	}
 }

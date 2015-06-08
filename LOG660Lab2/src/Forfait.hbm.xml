@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="Forfait" table="FORFAIT">
+  <id name="noForfait" type="int">
+   <column name="NOFORFAIT" />
+   <generator class="native"/>
+  </id>
+  <!-- http://blog.javachap.com/index.php/enumeration-mapping-in-hibernate/ -->
+  <property name="typeForfait">
+   <column name="TYPEFORFAIT" not-null="true" />
+   <type name="org.hibernate.type.EnumType">
+    <param name="enumClass">model.Forfait.TypeForfait</param>
+    <param name="type">12</param>
+   </type>
+  </property>
+  <property name="cout" type="float">
+   <column name="COUT" />
+  </property>
+  <property name="locationMax" type="int">
+   <column name="LOCATIONMAX" />
+  </property>
+  <property name="dureeMax" type="int">
+   <column name="DUREEMAX" />
+  </property>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="CarteCredit" table="CARTECREDIT">
+  <id name="noCC" type="int">
+   <column name="NOCC" />
+   <generator class="native"/>
+  </id>
+  <property name="dateExpiration" type="date">
+   <column name="DATEXPIRATION" not-null="true" />
+  </property>
+  <property name="nomProprietaire" type="string">
+   <column name="NOMPROPRIETAIRE" not-null="true" />
+  </property>
+  <property name="cvv" type="int">
+   <column name="CVV" not-null="true" />
+  </property>
+  <!-- http://blog.javachap.com/index.php/enumeration-mapping-in-hibernate/ -->
+  <property name="typeCredit">
+   <column name="TYPECC" not-null="true" />
+   <type name="org.hibernate.type.EnumType">
+    <param name="enumClass">model.CarteCredit.TypeCC</param>
+    <param name="type">12</param>
+   </type>
+  </property>
+ </class>
+</hibernate-mapping>
