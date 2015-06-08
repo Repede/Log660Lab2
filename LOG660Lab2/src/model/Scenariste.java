@@ -8,4 +8,8 @@ public class Scenariste
 	{
 		return noScenariste;
 	}
+	public void setNoScenariste(int noScenariste)
+	{
+		this.noScenariste = noScenariste;
+	}
 }

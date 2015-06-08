@@ -3,22 +3,37 @@ package model;
 public class Inventaire
 {
 	private int noCode;
-	private int noFilm;
 	private int nbCopies;
-	
-	public int getNoCode() {
+
+	private Film film;
+
+	public int getNoCode()
+	{
 		return noCode;
 	}
 
-	public int getNoFilm() {
-		return noFilm;
+	public Film getFilm()
+	{
+		return film;
 	}
 
-	public int getNbCopies() {
+	public int getNbCopies()
+	{
 		return nbCopies;
 	}
 	
-	public void setNbCopies(int nbCopies) {
+	public void setNoCode(int noCode)
+	{
+		this.noCode = noCode;
+	}
+	
+	public void setFilm(Film film)
+	{
+		this.film = film;
+	}
+
+	public void setNbCopies(int nbCopies)
+	{
 		this.nbCopies = nbCopies;
 	}
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="Inventaire" table="INVENTAIRE">
+  <id name="noCode" type="int">
+   <column name="NOCODE" />
+   <generator class="native"/>
+  </id>
+  
+  <property name="nbCopies" column="NBCOPIES"/>
+  
+  <many-to-one name="film"
+	column="NOFILM"
+	unique="true"
+	not-null="true"/>
+ </class>
+</hibernate-mapping>

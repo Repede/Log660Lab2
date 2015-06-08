@@ -8,4 +8,9 @@ public class Realisateur
 	{
 		return noRealisateur;
 	}
+	
+	public void setNoRealisateur(int noRealisateur)
+	{
+		this.noRealisateur = noRealisateur;
+	}
 }

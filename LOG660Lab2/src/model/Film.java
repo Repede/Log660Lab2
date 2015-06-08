@@ -9,66 +9,70 @@ public class Film
 	private int noGenreFilm;
 	private int annee;
 	private String sypnosis;
-	private int noRealisateur;
-	
-	public int getNoFilm() {
+
+	public int getNoFilm()
+	{
 		return noFilm;
 	}
 
-	public int getNoPaysFilm() {
+	public int getNoPaysFilm()
+	{
 		return noPaysFilm;
 	}
-	
-	public void setNoPaysFilm(int noPaysFilm) {
+
+	public void setNoPaysFilm(int noPaysFilm)
+	{
 		this.noPaysFilm = noPaysFilm;
 	}
-	
-	public String getLangue() {
+
+	public String getLangue()
+	{
 		return langue;
 	}
-	
-	public void setLangue(String langue) {
+
+	public void setLangue(String langue)
+	{
 		this.langue = langue;
 	}
-	
-	public int getDuree() {
+
+	public int getDuree()
+	{
 		return duree;
 	}
-	
-	public void setDuree(int duree) {
+
+	public void setDuree(int duree)
+	{
 		this.duree = duree;
 	}
-	
-	public int getNoGenreFilm() {
+
+	public int getNoGenreFilm()
+	{
 		return noGenreFilm;
 	}
-	
-	public void setNoGenreFilm(int noGenreFilm) {
+
+	public void setNoGenreFilm(int noGenreFilm)
+	{
 		this.noGenreFilm = noGenreFilm;
 	}
-	
-	public int getAnnee() {
+
+	public int getAnnee()
+	{
 		return annee;
 	}
-	
-	public void setAnnee(int annee) {
+
+	public void setAnnee(int annee)
+	{
 		this.annee = annee;
 	}
-	
-	public String getSypnosis() {
+
+	public String getSypnosis()
+	{
 		return sypnosis;
 	}
-	
-	public void setSypnosis(String sypnosis) {
+
+	public void setSypnosis(String sypnosis)
+	{
 		this.sypnosis = sypnosis;
 	}
-	
-	public int getNoRealisateur() {
-		return noRealisateur;
-	}
-	public void setNoRealisateur(int noRealisateur) {
-		this.noRealisateur = noRealisateur;
-	}
-	
-	
+
 }
